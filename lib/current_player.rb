@@ -8,6 +8,9 @@ def turn_count board
   return counter
 end
 
-def current_player
-  sd  
+def current_player board
+  if turn_count(board) % 2 == 0
+    return "X"    
+  end
+  return "O"
 end
